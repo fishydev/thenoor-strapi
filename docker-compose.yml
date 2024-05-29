@@ -66,6 +66,8 @@ services:
 
 volumes:
   strapi-data:
+  npm_data:
+  npm_letsencrypt:
 
 networks:
   strapi:
