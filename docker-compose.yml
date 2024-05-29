@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   strapi:
     container_name: strapi
@@ -62,7 +62,7 @@ services:
       - npm_data:/data
       - npm_letsencrypt:/etc/letsencrypt
     networks:
-      - frontend
+      - strapi
 
 volumes:
   strapi-data:
