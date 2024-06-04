@@ -65,17 +65,15 @@ services:
       - strapi
 
   thenoor-fe:
-    build: ~/the-noor/.
+    build: ./the-noor
     container_name: thenoor-fe
     restart: always
     ports:
       - 3000:3000
     volumes:
-      - ~/the-noor/app:/app
+      - ./the-noor:/app
     networks:
       - strapi
-
-
 
 volumes:
   strapi-data:
