@@ -20,6 +20,7 @@ services:
     volumes:
       - ./config:/opt/app/config
       - ./src:/opt/app/src
+      - ./types:/opt/app/types
       - ./package.json:/opt/package.json
       - ./yarn.lock:/opt/yarn.lock
       - ./.env:/opt/app/.env
